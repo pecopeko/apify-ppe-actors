@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (10 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (12 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -14,3 +14,5 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 | 8 | `mcp-registry-llms-txt-auditor` | `domain_audited` | `$0.002` | Domain AI agent readiness (`/llms.txt`, `/.well-known/mcp.json`, AI bot `robots.txt`) scorer |
 | 9 | `jp-b2b-contract-keiyaku-auditor` | `contract_audited` | `$0.004` | Japanese Subcontract Act (60d), Freelance Act, Liability/IP & Stamp Tax auditor |
 | 10 | `geo-sitemap-jsonld-citation-auditor` | `site_audited` | `$0.002` | GEO Schema.org JSON-LD `@type`, XML sitemap freshness & AI search citation readiness scorer |
+| 11 | `jp-tokushoho-darkpattern-ec-auditor` | `page_audited` | `$0.003` | Japanese Tokushoho (Art.11 / Art.12-6) & recurring checkout dark-pattern auditor |
+| 12 | `security-txt-caa-dmarc-posture-auditor` | `domain_audited` | `$0.002` | RFC 9116 `/.well-known/security.txt` & HTTP hardening headers posture scorer |
