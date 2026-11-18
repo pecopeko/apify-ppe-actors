@@ -1,36 +1,14 @@
-# Apify Pay-Per-Event (PPE) Actors — Zero-CAPTCHA Python Suite
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (8 Actors)
 
-A production-ready monorepo of lightweight, **zero-CAPTCHA, zero-browser** Python Apify Actors priced on the **Pay-Per-Event (`PAY_PER_EVENT`)** model. Each subdirectory is 100% self-contained with its own `.actor/` metadata, `pay_per_event.json`, `input_schema.json`, `requirements.txt`, and `Dockerfile` for direct 1-click **Apify Console -> Import from GitHub**.
+Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
-## Included Pay-Per-Event Actors
-
-| Directory | Actor Name | Primary Charge Event | Price (USD) | Target Workflow |
-|---|---|---|---:|---|
-| [`jp-llm-compliance-pii-guard/`](./jp-llm-compliance-pii-guard/) | `jp-llm-compliance-pii-guard` | `document_processed` | `$0.002` | Check-digit-verified Japanese Invoice (`T+13`), Corporate ID, MyNumber, card/phone/email redaction + bilingual prompt-injection screening |
-| [`podcast-rss-transcript-extractor/`](./podcast-rss-transcript-extractor/) | `podcast-rss-transcript-extractor` | `episode_extracted` | `$0.004` | Apple Podcasts ID / iTunes Search resolution, safe RSS XML parsing, clean show notes, chapters & normalized Podcasting 2.0 transcripts (`SRT`/`VTT`/`JSON`/`TXT`) |
-| [`japan-corporate-ir-press-extractor/`](./japan-corporate-ir-press-extractor/) | `japan-corporate-ir-press-extractor` | `filing_extracted` | `$0.003` | Real-time Japanese TDnet, JPX, BOJ, METI & PR RSS/Atom/JSON extraction with TSE stock codes (`7203`, `141A`), NTA Corporate Number enrichment & IR categorization |
-
-## Monetization & Revenue-Share Model
-
-All three Actors are configured with Apify **Pay-Per-Event (`PAY_PER_EVENT`)** pricing (`isPPEPlatformUsagePaidByUser: false` and `minimalMaxTotalChargeUsd: 0.05` in `.actor/pay_per_event.json`):
-
-- **Zero Browser / Zero Proxy Compute Overhead**: Pure `httpx` + Python 3.11 XML/JSON/text engines minimize Apify platform compute costs per run, maximizing creator net margin under Apify's Store payout model (`80%` gross revenue share minus underlying platform usage costs).
-- **Deterministic Checkpointing**: `Actor.charge(event_name=..., count=1)` is invoked only as each validated record is pushed to the dataset via `Actor.push_data(...)`.
-- **No Anti-Bot or CAPTCHA Fragility**: Relies strictly on public APIs (`itunes.apple.com`), official RSS/Atom/RDF feeds (`jpx.co.jp`, `boj.or.jp`, `meti.go.jp`, `prtimes.jp`), public timely disclosure JSON (`webapi.yanoshin.jp`), and deterministic local compliance algorithms.
-
-## Apify Console Import Instructions (GitHub)
-
-To deploy any Actor directly into your Apify Console account with zero local CLI setup:
-
-1. Open **Apify Console -> Actors -> Create new -> Link Git repository**.
-2. Set **Git URL** to `https://github.com/pecopeko/apify-ppe-actors` and **Branch** to `main`.
-3. Set **Folder** to one of the three self-contained actor directories:
-   - `jp-llm-compliance-pii-guard`
-   - `podcast-rss-transcript-extractor`
-   - `japan-corporate-ir-press-extractor`
-4. Click **Build**, verify `.actor/pay_per_event.json` in **Monetization**, and publish to the Apify Store.
-
-## Security & XML Safety
-
-- All XML feed parsers (`podcast-rss-transcript-extractor`, `japan-corporate-ir-press-extractor`) explicitly reject `<!DOCTYPE` and `<!ENTITY` declarations outside CDATA blocks to prevent XML entity expansion (Billion Laughs) attacks.
-- HTTP(S) scheme validation is enforced on all feed, transcript, and chapter URLs.
+| # | Actor Folder / Slug | Primary PPE Event | Price / Event | Domain / Focus |
+|---|---|---|---|---|
+| 1 | `jp-llm-compliance-pii-guard` | `document_processed` | `$0.002` | Japanese T+13 / MyNumber check-digit PII redaction & prompt-injection guard |
+| 2 | `podcast-rss-transcript-extractor` | `episode_extracted` | `$0.004` | Apple Podcast & RSS 2.0 `podcast:transcript` (SRT/VTT/JSON/TXT) normalizer |
+| 3 | `japan-corporate-ir-press-extractor` | `filing_extracted` | `$0.003` | JPX/TDnet/METI/BOJ/PR Times corporate IR disclosure extractor + Corporate ID enrichment |
+| 4 | `jp-yakki-keihyo-ad-auditor` | `ad_copy_audited` | `$0.003` | Japanese Yakki-ho (薬機法), Keihyo-ho (No.1/Pricing), & stealth-marketing auditor |
+| 5 | `jp-qualified-invoice-zengin-validator` | `record_validated` | `$0.001` | NTA Mod-9 Invoice/Corporate ID validator, Zengin half-width kana converter & 120B checker |
+| 6 | `shopify-public-catalog-feed-extractor` | `product_extracted` | `$0.002` | Fast browserless Shopify `/products.json` catalog, SKU, price & stock extractor |
+| 7 | `sec-edgar-8k-10k-item-extractor` | `filing_extracted` | `$0.004` | Official SEC `data.sec.gov` 8-K/10-K/10-Q filings + US-GAAP XBRL snapshot extractor |
+| 8 | `mcp-registry-llms-txt-auditor` | `domain_audited` | `$0.002` | Domain AI agent readiness (`/llms.txt`, `/.well-known/mcp.json`, AI bot `robots.txt`) scorer |
