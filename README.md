@@ -16,3 +16,6 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 | 10 | `geo-sitemap-jsonld-citation-auditor` | `site_audited` | `$0.002` | GEO Schema.org JSON-LD `@type`, XML sitemap freshness & AI search citation readiness scorer |
 | 11 | `jp-tokushoho-darkpattern-ec-auditor` | `page_audited` | `$0.003` | Japanese Tokushoho (Art.11 / Art.12-6) & recurring checkout dark-pattern auditor |
 | 12 | `security-txt-caa-dmarc-posture-auditor` | `domain_audited` | `$0.002` | RFC 9116 `/.well-known/security.txt` & HTTP hardening headers posture scorer |
+### Wave 5 Actors (#13–#14)
+13. **`jp-denchoho-filename-ledger-validator`** (`record_validated` @ `$0.001`) — Normalize messy Japanese invoice/receipt strings (Wareki `令和`/`R`/full-width) into Revised Electronic Books Preservation Act `YYYYMMDD_Partner_Amount.pdf` filenames with NTA Mod-9 T-number check.
+14. **`oss-sbom-copyleft-license-auditor`** (`manifest_audited` @ `$0.003`) — Screen `package.json`, `requirements.txt`, and SBOM package records for strong/network copyleft licenses (`AGPL`/`GPL`/`SSPL`/`BUSL`), weak copyleft (`MPL`/`LGPL`), unknown SPDX fields, and unpinned dependencies.
