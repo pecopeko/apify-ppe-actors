@@ -19,3 +19,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 5 Actors (#13–#14)
 13. **`jp-denchoho-filename-ledger-validator`** (`record_validated` @ `$0.001`) — Normalize messy Japanese invoice/receipt strings (Wareki `令和`/`R`/full-width) into Revised Electronic Books Preservation Act `YYYYMMDD_Partner_Amount.pdf` filenames with NTA Mod-9 T-number check.
 14. **`oss-sbom-copyleft-license-auditor`** (`manifest_audited` @ `$0.003`) — Screen `package.json`, `requirements.txt`, and SBOM package records for strong/network copyleft licenses (`AGPL`/`GPL`/`SSPL`/`BUSL`), weak copyleft (`MPL`/`LGPL`), unknown SPDX fields, and unpinned dependencies.
+
+### Wave 6 Actors (15-16)
+- `jp-appi-privacy-gaibusoshin-auditor`: Japan APPI (Art.17/23/27/28/32) & Telecom Art. 27-12 external transmission SDK auditor (`policy_audited` @ `$0.003`).
+- `openapi-agent-tool-readiness-auditor`: OpenAPI 3.x & MCP agent tool schema readiness auditor (`spec_audited` @ `$0.003`).
