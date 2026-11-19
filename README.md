@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (24 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (26 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -39,3 +39,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 10 Actors (23-24)
 - `jp-meti-supplychain-security-auditor`: Japan METI Supply Chain Security (Star 3/4), PPC breach reporting SLA (3-5d / 30-60d), Unfair Competition Trade Secret 3 requirements, & SPF/DMARC (RFC 7208 10-lookup limit) auditor (`checksheet_audited` @ `$0.004`).
 - `postgres-mysql-migration-lock-safety-auditor`: PostgreSQL & MySQL zero-downtime SQL migration lock safety auditor catching non-CONCURRENTLY indexes, CONCURRENTLY inside transactions, TYPE rewrites, FK validation locks, unacknowledged DROP/TRUNCATE, and unbounded DML (`migration_audited` @ `$0.003`).
+
+### Wave 11 Actors (25-26)
+- `jp-meti-ai-governance-copyright304-auditor`: Japan METI/MIC AI Guidelines v1.1, Copyright Act Art. 30-4 (non-enjoyment & artist style mimicry), Shadow AI opt-out, EU AI Act risk tier & OSS model license auditor (`guideline_audited` @ `$0.004`).
+- `web-csp-cors-cookie-hardening-auditor`: HTTP security headers & Next.js/Nginx config auditor catching wildcard/reflected CORS credentials, unsafe CSP inline/eval, missing clickjacking guards, weak HSTS, insecure cookies, and X-Powered-By/Server leaks (`config_audited` @ `$0.003`).
