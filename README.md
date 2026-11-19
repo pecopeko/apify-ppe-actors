@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (42 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (44 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -74,3 +74,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 19 Actors (41-42)
 41. `jp-asbj34-new-lease-accounting-auditor/` (`lease_contract_audited` @ `$0.004` — Japan ASBJ Statement No. 34 New Lease Accounting (Apr 2027) on-balance PV Lease Liability, short-term <=12m / low-value <=¥3M exemptions & embedded SaaS/logistics lease auditor)
 42. `ci-env-secret-key-leak-entropy-auditor/` (`secret_scan_audited` @ `$0.003` — CI/workflow log, `.env`, and app config scanner detecting cloud/API secret exposures and unsafe TLS/debug overrides)
+
+### Wave 20 Actors (43-44)
+43. `jp-keizaianpo-clearance-supplychain-auditor/` (`security_clearance_audited` @ `$0.004` — Japan Economic Security Promotion Act essential infrastructure 15-sector prior notification, critical commodity >=50% dependency concentration, patent non-publication & May 2025 Security Clearance assessment auditor)
+44. `cloud-iam-oidc-least-privilege-auditor/` (`iam_policy_audited` @ `$0.003` — AWS/GCP IAM wildcard, GitHub OIDC `:sub` claim, IAM privilege-escalation paths, public `Principal: '*'`, `NotAction`, & Kubernetes IRSA auditor)
