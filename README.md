@@ -1,4 +1,13 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (44 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (45 Actors)
+
+## Flagship Production-Verified Store Winners (Live-Tested, Zero-CAPTCHA, Zero-Browser)
+| Actor Folder / Slug | Primary PPE Event | Price | Proven Demand & Highlights |
+|---|---|---|---|
+| `shopify-public-catalog-feed-extractor` (v2.0) | `product_extracted` | `$0.001` | Multi-store batch, SSRF+redirect safe, 429 Retry-After backoff, full variants/discounts & `/collections.json` |
+| `podcast-rss-transcript-extractor` (v2.0) | `episode_extracted` + `transcript_extracted` | `$0.002` + `$0.002` | RSS `<itunes:owner>` host emails, Apple Reviews JSON, Podcasting 2.0 VTT/SRT/JSON transcripts, fair split PPE |
+| `substack-newsletter-posts-extractor` (v1.0) | `post_extracted` | `$0.001` | Public `/api/v1/archive` + `/feed` RAG-ready Markdown/text, honest paywall detection (zero bypass) |
+| `sec-edgar-8k-10k-item-extractor` (v2.0) | `filing_extracted` | `$0.004` | SEC Fair Access email UA (`200 OK`), ASC 606 annual vs quarterly XBRL, `efts.sec.gov` Form D startup funding search |
+
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -78,3 +87,6 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 20 Actors (43-44)
 43. `jp-keizaianpo-clearance-supplychain-auditor/` (`security_clearance_audited` @ `$0.004` — Japan Economic Security Promotion Act essential infrastructure 15-sector prior notification, critical commodity >=50% dependency concentration, patent non-publication & May 2025 Security Clearance assessment auditor)
 44. `cloud-iam-oidc-least-privilege-auditor/` (`iam_policy_audited` @ `$0.003` — AWS/GCP IAM wildcard, GitHub OIDC `:sub` claim, IAM privilege-escalation paths, public `Principal: '*'`, `NotAction`, & Kubernetes IRSA auditor)
+
+### Flagship Production Release (#45)
+45. `substack-newsletter-posts-extractor/` (`post_extracted` @ `$0.001` — Substack public archive & RSS full-text Markdown/RAG extractor with honest paywall flagging)
