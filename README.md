@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (34 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (36 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -58,3 +58,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 15 Actors (33-34)
 33. `jp-construction-kensetsugyo-2024-compliance-auditor/` (`construction_contract_audited` @ `$0.004` — Japan Revised Construction Business Act Art. 19 written terms, Standard Labor/Welfare breakdown & no-dumping, price escalation consultation, 2025 Tokutei 50M/80M JPY license thresholds & 2024 overtime caps)
 34. `llm-rag-prompt-leak-vector-poisoning-auditor/` (`rag_chunk_audited` @ `$0.003` — LLM RAG knowledge chunk & vector-index auditor detecting indirect injection, Markdown exfiltration beacons, multi-tenant ACL bypasses, leaked keys, oversized chunk_size/top_k, and unverified ingestion)
+
+### Wave 16 Actors (35-36)
+35. `jp-logistics-2025-butsuryu-hakobi-auditor/` (`logistics_contract_audited` @ `$0.004` — Japan Revised Logistics Efficiency Act 90,000t/yr Specific Shipper CLO, wait+handling <=2h rule, Truck Act Standard Tariff 90% floor & Actual Carrier <=Tier 2, 2024 driver binding/rest caps)
+36. `cicd-slsa-vex-provenance-auditor/` (`provenance_audited` @ `$0.003` — SLSA Provenance, OpenVEX & Build-Install supply-chain auditor catching curl|sh remote installers, dangerous npm/pip install hooks, skipped attestation checks, mutable @main/:latest refs, and unjustified VEX suppressions)
