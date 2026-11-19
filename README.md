@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (32 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (34 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -54,3 +54,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 14 Actors (31-32)
 31. `jp-ssbj-ghg-carbon-greenwash-auditor/` (`ghg_disclosure_audited` @ `$0.004` — Japan SSBJ S1/S2, SHK 3,000 t-CO2 EEGS threshold, Scope 1/2 Location vs Market minus non-fossil certs, Scope 3 Cat.1 & Greenwash claim auditor)
 32. `mcp-agent-tool-poisoning-security-auditor/` (`mcp_config_audited` @ `$0.003` — MCP server manifest & agent tool schema auditor detecting hidden prompt-injection poisoning, unpinned `npx -y`, leaked secrets, unsafe host mounts, cleartext HTTP, and unconstrained schema sinks)
+
+### Wave 15 Actors (33-34)
+33. `jp-construction-kensetsugyo-2024-compliance-auditor/` (`construction_contract_audited` @ `$0.004` — Japan Revised Construction Business Act Art. 19 written terms, Standard Labor/Welfare breakdown & no-dumping, price escalation consultation, 2025 Tokutei 50M/80M JPY license thresholds & 2024 overtime caps)
+34. `llm-rag-prompt-leak-vector-poisoning-auditor/` (`rag_chunk_audited` @ `$0.003` — LLM RAG knowledge chunk & vector-index auditor detecting indirect injection, Markdown exfiltration beacons, multi-tenant ACL bypasses, leaked keys, oversized chunk_size/top_k, and unverified ingestion)
