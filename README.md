@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (40 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (42 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -70,3 +70,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 18 Actors (39-40)
 39. `jp-fsc-kyc-aml-fatf-cryptopayment-auditor/` (`aml_compliance_audited` @ `$0.004` — Japan Payment Services Act 50% security deposit over ¥10M unused prepaid balance, Type 2 ¥1M remittance limit, Criminal Proceeds Act 7-year KYC/STR/JAFIC & FATF Travel Rule auditor)
 40. `ai-agent-prompt-tool-guard-eval-auditor/` (`agent_trace_audited` @ `$0.003` — AI agent prompt-injection, system-prompt/env leak, cloud metadata SSRF, unsandboxed shell/eval, webhook exfiltration & missing HITL gate auditor)
+
+### Wave 19 Actors (41-42)
+41. `jp-asbj34-new-lease-accounting-auditor/` (`lease_contract_audited` @ `$0.004` — Japan ASBJ Statement No. 34 New Lease Accounting (Apr 2027) on-balance PV Lease Liability, short-term <=12m / low-value <=¥3M exemptions & embedded SaaS/logistics lease auditor)
+42. `ci-env-secret-key-leak-entropy-auditor/` (`secret_scan_audited` @ `$0.003` — CI/workflow log, `.env`, and app config scanner detecting cloud/API secret exposures and unsafe TLS/debug overrides)
