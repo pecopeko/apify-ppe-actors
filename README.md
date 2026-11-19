@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (36 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (38 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -62,3 +62,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 16 Actors (35-36)
 35. `jp-logistics-2025-butsuryu-hakobi-auditor/` (`logistics_contract_audited` @ `$0.004` — Japan Revised Logistics Efficiency Act 90,000t/yr Specific Shipper CLO, wait+handling <=2h rule, Truck Act Standard Tariff 90% floor & Actual Carrier <=Tier 2, 2024 driver binding/rest caps)
 36. `cicd-slsa-vex-provenance-auditor/` (`provenance_audited` @ `$0.003` — SLSA Provenance, OpenVEX & Build-Install supply-chain auditor catching curl|sh remote installers, dangerous npm/pip install hooks, skipped attestation checks, mutable @main/:latest refs, and unjustified VEX suppressions)
+
+### Wave 17 Actors (37-38)
+37. `jp-toriteki-2026-subcontract-act-auditor/` (`toriteki_contract_audited` @ `$0.004` — Japan 2026 Toriteki Act Revised Subcontract Act, 300/100 employee headcount scope, promissory note & discount-fee ban, 60-day cash settlement, bilateral cost pass-through talk & unpaid mold custody auditor)
+38. `kubernetes-rbac-networkpolicy-pss-auditor/` (`cluster_policy_audited` @ `$0.003` — Kubernetes RBAC wildcard/cluster-admin, ServiceAccount token automounting, NetworkPolicy open-CIDR/podSelector, PodSecurity privileged/baseline, Admission webhook failurePolicy: Ignore & quota auditor)
