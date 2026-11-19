@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (30 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (32 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -50,3 +50,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 
 29. `jp_fefta_export_control_actor/` (`jp-fefta-export-control-deemed-export-auditor` — FEFTA Lists 1-15, Catch-All 16, Deemed Export Categories 1-3, US EAR De Minimis `export_screening_audited` @ `$0.004`)
 30. `oauth_jwt_oidc_hardening_actor/` (`oauth2-oidc-jwt-security-hardening-auditor` — OAuth2/OIDC & JWT `alg=none`/claim bypass/PKCE/redirect URI/token TTL auditor `auth_config_audited` @ `$0.003`)
+
+### Wave 14 Actors (31-32)
+31. `jp-ssbj-ghg-carbon-greenwash-auditor/` (`ghg_disclosure_audited` @ `$0.004` — Japan SSBJ S1/S2, SHK 3,000 t-CO2 EEGS threshold, Scope 1/2 Location vs Market minus non-fossil certs, Scope 3 Cat.1 & Greenwash claim auditor)
+32. `mcp-agent-tool-poisoning-security-auditor/` (`mcp_config_audited` @ `$0.003` — MCP server manifest & agent tool schema auditor detecting hidden prompt-injection poisoning, unpinned `npx -y`, leaked secrets, unsafe host mounts, cleartext HTTP, and unconstrained schema sinks)
