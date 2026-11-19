@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (45 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (47 Actors)
 
 ## Flagship Production-Verified Store Winners (Live-Tested, Zero-CAPTCHA, Zero-Browser)
 | Actor Folder / Slug | Primary PPE Event | Price | Proven Demand & Highlights |
@@ -7,6 +7,8 @@
 | `podcast-rss-transcript-extractor` (v2.0) | `episode_extracted` + `transcript_extracted` | `$0.002` + `$0.002` | RSS `<itunes:owner>` host emails, Apple Reviews JSON, Podcasting 2.0 VTT/SRT/JSON transcripts, fair split PPE |
 | `substack-newsletter-posts-extractor` (v1.0) | `post_extracted` | `$0.001` | Public `/api/v1/archive` + `/feed` RAG-ready Markdown/text, honest paywall detection (zero bypass) |
 | `sec-edgar-8k-10k-item-extractor` (v2.0) | `filing_extracted` | `$0.004` | SEC Fair Access email UA (`200 OK`), ASC 606 annual vs quarterly XBRL, `efts.sec.gov` Form D startup funding search |
+| `ats-greenhouse-lever-ashby-jobs-extractor` (v1.0) | `job_extracted` | `$0.001` | Greenhouse + Lever + Ashby public JSON APIs, remote/hybrid, salary parsing & 49 tech skills |
+| `website-tech-stack-sitemap-extractor` (v1.0) | `site_profiled` | `$0.002` | 79 tech stack signatures + recursive `robots.txt`/XML/`.xml.gz` sitemaps, JSON-LD & public contacts |
 
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
@@ -90,3 +92,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 
 ### Flagship Production Release (#45)
 45. `substack-newsletter-posts-extractor/` (`post_extracted` @ `$0.001` — Substack public archive & RSS full-text Markdown/RAG extractor with honest paywall flagging)
+
+### Global Production Expansion (#46-#47)
+46. `ats-greenhouse-lever-ashby-jobs-extractor/` (`job_extracted` @ `$0.001` — Greenhouse, Lever & Ashby job boards with remote/salary/seniority/49 tech skills)
+47. `website-tech-stack-sitemap-extractor/` (`site_profiled` @ `$0.002` — 79 tech stack signatures + recursive `robots.txt`/XML/gzip sitemap + JSON-LD/public contacts)
