@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (12 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (22 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -31,3 +31,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 8 Actors (19-20)
 - `jp-labor-notice-overtime-36-auditor`: Japan April 2024 Employment Notice, Supreme Court 3-part fixed overtime, >60h 1.50x overtime math, min wage & Art. 36 rolling 80h auditor (`notice_audited` @ `$0.003`).
 - `dockerfile-compose-k8s-security-auditor`: Dockerfile, Docker Compose & Kubernetes manifest hardening auditor detecting `:latest`/untagged images, root containers, ENV/ARG secrets, privileged/host networks, and `curl|sh` (`manifest_audited` @ `$0.003`).
+
+### Wave 9 Actors (21-22)
+- `jp-jis8341-wcag-accessibility-auditor`: Japan Revised Disability Discrimination Act & JIS X 8341-3:2016 / WCAG 2.2 AA auditor checking sRGB contrast math (4.5:1 / 3.0:1), alt/label/lang/title/heading order, viewport zoom locks, and skip links (`page_audited` @ `$0.004`).
+- `terraform-hcl-security-finops-auditor`: Terraform HCL security & FinOps auditor catching public 0.0.0.0/0 SGs, wildcard IAM policies, unencrypted S3/RDS/EBS volumes, hardcoded cloud credentials, and unpinned/oversized GPU/DB instances (`module_audited` @ `$0.003`).
