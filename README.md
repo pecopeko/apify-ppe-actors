@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (38 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (40 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -66,3 +66,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 17 Actors (37-38)
 37. `jp-toriteki-2026-subcontract-act-auditor/` (`toriteki_contract_audited` @ `$0.004` — Japan 2026 Toriteki Act Revised Subcontract Act, 300/100 employee headcount scope, promissory note & discount-fee ban, 60-day cash settlement, bilateral cost pass-through talk & unpaid mold custody auditor)
 38. `kubernetes-rbac-networkpolicy-pss-auditor/` (`cluster_policy_audited` @ `$0.003` — Kubernetes RBAC wildcard/cluster-admin, ServiceAccount token automounting, NetworkPolicy open-CIDR/podSelector, PodSecurity privileged/baseline, Admission webhook failurePolicy: Ignore & quota auditor)
+
+### Wave 18 Actors (39-40)
+39. `jp-fsc-kyc-aml-fatf-cryptopayment-auditor/` (`aml_compliance_audited` @ `$0.004` — Japan Payment Services Act 50% security deposit over ¥10M unused prepaid balance, Type 2 ¥1M remittance limit, Criminal Proceeds Act 7-year KYC/STR/JAFIC & FATF Travel Rule auditor)
+40. `ai-agent-prompt-tool-guard-eval-auditor/` (`agent_trace_audited` @ `$0.003` — AI agent prompt-injection, system-prompt/env leak, cloud metadata SSRF, unsandboxed shell/eval, webhook exfiltration & missing HITL gate auditor)
