@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (22 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (24 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -35,3 +35,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 9 Actors (21-22)
 - `jp-jis8341-wcag-accessibility-auditor`: Japan Revised Disability Discrimination Act & JIS X 8341-3:2016 / WCAG 2.2 AA auditor checking sRGB contrast math (4.5:1 / 3.0:1), alt/label/lang/title/heading order, viewport zoom locks, and skip links (`page_audited` @ `$0.004`).
 - `terraform-hcl-security-finops-auditor`: Terraform HCL security & FinOps auditor catching public 0.0.0.0/0 SGs, wildcard IAM policies, unencrypted S3/RDS/EBS volumes, hardcoded cloud credentials, and unpinned/oversized GPU/DB instances (`module_audited` @ `$0.003`).
+
+### Wave 10 Actors (23-24)
+- `jp-meti-supplychain-security-auditor`: Japan METI Supply Chain Security (Star 3/4), PPC breach reporting SLA (3-5d / 30-60d), Unfair Competition Trade Secret 3 requirements, & SPF/DMARC (RFC 7208 10-lookup limit) auditor (`checksheet_audited` @ `$0.004`).
+- `postgres-mysql-migration-lock-safety-auditor`: PostgreSQL & MySQL zero-downtime SQL migration lock safety auditor catching non-CONCURRENTLY indexes, CONCURRENTLY inside transactions, TYPE rewrites, FK validation locks, unacknowledged DROP/TRUNCATE, and unbounded DML (`migration_audited` @ `$0.003`).
