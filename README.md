@@ -1,4 +1,4 @@
-# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (26 Actors)
+# Horizon-Money Apify Store Pay-Per-Event (PPE) Actor Suite (28 Actors)
 
 Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdirectory in Apify Console.
 
@@ -43,3 +43,7 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Wave 11 Actors (25-26)
 - `jp-meti-ai-governance-copyright304-auditor`: Japan METI/MIC AI Guidelines v1.1, Copyright Act Art. 30-4 (non-enjoyment & artist style mimicry), Shadow AI opt-out, EU AI Act risk tier & OSS model license auditor (`guideline_audited` @ `$0.004`).
 - `web-csp-cors-cookie-hardening-auditor`: HTTP security headers & Next.js/Nginx config auditor catching wildcard/reflected CORS credentials, unsafe CSP inline/eval, missing clickjacking guards, weak HSTS, insecure cookies, and X-Powered-By/Server leaks (`config_audited` @ `$0.003`).
+
+### Wave 12 Actors (27-28)
+- `jp-hansha-ubo-whistleblower-auditor`: Japan Anti-Social Forces exclusion clauses (past-5yr rep, Kyoseisha, immediate termination, damage waiver), Criminal Proceeds Act >25% indirect UBO tree calculator + 7yr retention, and Revised Whistleblower Protection Act auditor (`screening_audited` @ `$0.004`).
+- `graphql-schema-dos-introspection-auditor`: GraphQL SDL & server config auditor catching exposed introspection/GraphiQL, missing depthLimit on nested object cycles, unguarded query batching, unprotected sensitive fields (`passwordHash`/`myNumber`), unbounded Query lists, and disabled CSRF protection (`schema_audited` @ `$0.003`).
