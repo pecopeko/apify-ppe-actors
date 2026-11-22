@@ -96,3 +96,6 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 ### Global Production Expansion (#46-#47)
 46. `ats-greenhouse-lever-ashby-jobs-extractor/` (`job_extracted` @ `$0.001` — Greenhouse, Lever & Ashby job boards with remote/salary/seniority/49 tech skills)
 47. `website-tech-stack-sitemap-extractor/` (`site_profiled` @ `$0.002` — 79 tech stack signatures + recursive `robots.txt`/XML/gzip sitemap + JSON-LD/public contacts)
+
+### Stateless MCP 2026-07-28 & Enterprise Firewall Wave (#48)
+48. `mcp-stateless-v2-firewall-auditor/` (`manifest_audited` @ `$0.003` — 10-gate Stateless MCP `2026-07-28` & Enterprise MCP Firewall auditor for `mcp.json` / Cursor / Claude / gateway configs with auto-generated Entra/Cloudflare/Envoy JSON policy & Stateless v2 migration stub)
