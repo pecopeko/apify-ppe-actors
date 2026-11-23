@@ -99,3 +99,6 @@ Low-overhead, zero-API-key, Pay-Per-Event Python Actors ready to link per subdir
 
 ### Stateless MCP 2026-07-28 & Enterprise Firewall Wave (#48)
 48. `mcp-stateless-v2-firewall-auditor/` (`manifest_audited` @ `$0.003` — 10-gate Stateless MCP `2026-07-28` & Enterprise MCP Firewall auditor for `mcp.json` / Cursor / Claude / gateway configs with auto-generated Entra/Cloudflare/Envoy JSON policy & Stateless v2 migration stub)
+
+### Japan 2026 (Reiwa 8) Year-End Tax Adjustment Wave
+- `jp-nenmatsu-2026-tax-payroll-auditor/` (`employee_audited` @ `$0.002` — Japan Reiwa 8 (2026-12-01) Year-End Tax Adjustment statutory batch auditor: 740k JPY employment deduction, 1,040k JPY basic deduction up to 4.89M JPY total income, 136M JPY dependent/spouse threshold, 9-step 19-22yo Special Relative Deduction & Shift-JIS/UTF-8 CSV audit)
